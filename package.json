@@ -1,0 +1,21 @@
+{
+  "name": "scanner-snmp",
+  "version": "1.0.0",
+  "description": "Scanner de rede SNMP",
+  "main": "C:/xampp/htdocs/snmp/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "mysql2": "^3.12.0",
+    "net-ping": "^1.2.4",
+    "net-snmp": "^3.6.0",
+    "ping": "^0.4.4",
+    "scanner-snmp": "file:",
+    "snmp-native": "^1.0.0"
+  },
+  "devDependencies": {
+    "electron": "^28.1.3"
+  }
+}
