@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner SNMP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Scanner SNMP</h1>
+    
+    <div>
+        <label for="clientName">Nome do Cliente:</label>
+        <input type="text" id="clientName" placeholder="Digite o nome do cliente">
+    </div>
+
+    <div>
+    <label>Último octeto - Início:</label>
+    <input type="number" id="ipStart" min="1" max="254" value="1">
+    
+    <label>Último octeto - Fim:</label>
+    <input type="number" id="ipEnd" min="1" max="254" value="10">
+</div>  
+
+    <div>
+        <button id="startScan">Iniciar Scan</button>
+    </div>
+
+    <div>
+        <h2>Progresso:</h2>
+        <progress id="scanProgress" value="0" max="100"></progress>
+        <p id="progressText">0%</p>
+    </div>
+
+    <div>
+        <h2>Resultados:</h2>
+        <ul id="resultsList"></ul>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
